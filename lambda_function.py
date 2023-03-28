@@ -1,3 +1,4 @@
 
 def lambda_handler(event, context):
-    print('Successfully done task from github to aws')
+    for message in event['Records']:
+        print(message['Body'])
