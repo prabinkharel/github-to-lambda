@@ -1,3 +1,3 @@
-
 def lambda_handler(event, context):
-    print(event)
+    for message in event['Records']:
+        print(message['body'])
